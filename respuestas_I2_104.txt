@@ -1,0 +1,10 @@
+1- Fazio Renata (ALFA)
+2- Castelari Facundo (BETA)
+3- Catrini Lucio (GAMMA)
+
+Respuestas: 
+
+BETA:
+
+c-) GAMMA no puede actualizar su fork automaticamente desde el de ALFA, pero si puede hacerlo manualmente al agregar el fork de ALFA como remoto.
+d-) Los cambios no se pierden si quiero actualizar el fork mientras se haga un merge de manera correcta.
