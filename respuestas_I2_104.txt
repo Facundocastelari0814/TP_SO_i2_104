@@ -3,8 +3,13 @@
 3- Catrini Lucio (GAMMA)
 
 Respuestas: 
-
-BETA:
+GAMMA:
+a) Para actualizar mi repositorio al estado del repo original(BETA):
+	-git fetch upstream
+	-git merge upstream/main (resolviendo el error si te aparece)
+	-git push
+b)  
+ALFA no puede actualizar su fork directamente al estado de mi fork.Para lograr eso debera hacer un pull request hacia BETA y luego actualizar su fork desde BETA
 
 c-) GAMMA no puede actualizar su fork automaticamente desde el de ALFA, pero si puede hacerlo manualmente al agregar el fork de ALFA como remoto.
 d-) Los cambios no se pierden si quiero actualizar el fork mientras se haga un merge de manera correcta.
