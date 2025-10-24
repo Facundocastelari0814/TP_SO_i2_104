@@ -1,0 +1,56 @@
+1- Fazio Renata (ALFA)
+2- Castelari Facundo (BETA)
+3- Catrini Lucio (GAMMA)
+
+Respuestas: 
+
+BETA:
+
+c-) GAMMA no puede actualizar su fork automaticamente desde el de ALFA, pero si puede hacerlo manualmente al agregar el fork de ALFA como remoto.
+d-) Los cambios no se pierden si quiero actualizar el fork mientras se haga un merge de manera correcta.
+
+ALFA:
+
+e)
+Para que Beta cree el archivo fork.txt
+git clone (link del repo en github)
+cd TP_SO_i2_104
+touch fork.txt
+git add fork.txt
+git commit -m "cree fork.txt"
+git push
+
+Gamma y Alfa modifican fork.txt con sus datos
+git clone (link del repo)
+cd TP_SO_i2_104
+echo "Renata Fazio" >> fork.txt
+echo "192.168.0.104" >> fork.txt
+echo "18:40" >> fork.txt
+cat fork.txt
+git add fork.txt
+git commit -m "Escribo mis datos en fork.txt"
+git push
+
+¡GAMMA HIZO LO MISMO PERO CON SUS DATOS!
+
+Beta crea el archivo NuevoDato.txt
+cd TP_SO_i2_104
+touch NuevoDato.txt
+git add NuevoDato.txt
+git commit -m "cree NuevoDato.txt"
+git push
+
+Beta crea el archivo con las respuestas, agrega a los integrantes y sus respectivas respuestas:
+touch respuestas_i2_104.txt
+git add respuestas_i2_104.txt
+git commit -m "Respuestas"
+git push
+git pull origin main
+nano respuestas_i2_104.txt (abre la consola y escribe a los integrantes del grupo y las respuestas que le corresponden)
+cat respuestas_i2_104.txt
+git add respuestas_i2_104.txt
+git commit -m "Agrego respuestas C y D (BETA)"
+git push origin main
+
+Para los demás integrantes subir las respuestas, también usamos el comando nano. Igual a los comandos que escribí arriba de este texto.
+
